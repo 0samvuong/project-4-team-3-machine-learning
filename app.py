@@ -140,7 +140,8 @@ def ArticleAnalysis2(input):
     #     author = ''
 
     # ML MODEL
-    with open('models/naive_bayes_ben__headline_body.pickle', 'rb') as picklefile:
+    #with open('models/naive_bayes_ben__headline_body.pickle', 'rb') as picklefile:
+    with open('models/regression_pipeline.pickle', 'rb') as picklefile:
         saved_pipe = pickle.load(picklefile)
 
     # ML MODEL DATA PROCESSING
